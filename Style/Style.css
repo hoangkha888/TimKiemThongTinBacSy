@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar{
+  height: 50px;
+  border-radius: 5px;
+}
+.navbar ul li .logo{
+  height: 20px;
+}
+.btn-outline-primary {
+  color: #0FA958;
+  background-color: transparent;
+  background-image: none;
+  border-color: #0FA958;
+}
+
+.banner{
+  padding: 10px;
+  width: 100%;
+}
+
+.banner img{
+  width: 100%;
+  height: auto;
+}
+/* Style the top navigation bar */
+
+.topnav{
+  background: #0FA958;
+  height: 50px;
+  border-radius: 5px;
+  width: 1310px;
+  margin-left: 10px;
+
+}
+.topnav ul{
+  position: relative;
+  height: 50px;
+}
+/*dàn hàng ngang; các phần tử li tiếp theo bám theo các li phía trước*/
+.topnav ul li{
+  float: left;
+  list-style: none;
+  border-right: 1px solid #ccc;
+  border-left:1px solid #333;
+}
+.topnav ul li a{
+  display: block; 
+  padding: 0 25px;
+  line-height: 50px;
+  color: #f1f2f3;
+  text-decoration: none;
+}
+/*bỏ đường kẻ bên trái của phần tử li đầu tiên*/
+.topnav ul li:first-child {
+  border-left: none;
+}
+.topnav> ul li:first-child a{
+  border-left: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.topnav ul li:hover>a{
+  background:#0FA958;
+  opacity: .7;
+  color: #ffff;
+}
+/*menu con*/
+.topnav li>ul{
+  display: none; /* ban đầu ẩn menu con */
+  width: 280px;
+  position: absolute;
+}
+.topnav li>ul li{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: #999;
+}
+.topnav li>ul li:first-child a{
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.topnav li>ul li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.topnav li>ul li:last-child a{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/*khi hover thì hiện menu con*/
+.topnav>ul li:hover ul{
+  display:  block;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.boxSearch{
+  width: 980px;
+  height: 330px;
+  background-color: #0FA958;
+  border: 1px solid #070606;
+  border-radius: 10px;
+}
+.boxSearch form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.iputserch{
+  height: auto;
+  width: 940px;
+  padding: 10px 10px 0px 10px;
+  color: #fff;
+}
+
+.boxSearch .iputserch input[type="text"] {
+  width: 940px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px;
+}
+
+.boxselect{
+  height: auto;
+  width: 940px;
+  padding: 10px;
+}
+.boxselect label{
+  color: #fff;
+}
+
+.boxselect select {
+  width: 940px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px;
+}
+
+.thamnien button {
+
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.quantity {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 40px;
+margin: 10px 0px 10px 14px;
+width: 937px;
+height: 40px;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;
+}
+.quantity input{
+  height: 30px;
+  width: 30px;
+  border: 2px solid #000000;
+}
+
+.thamnien input{
+text-align: center;
+font-size: 16px;
+border: 1px solid #ccc;
+background-color: #fff;
+
+}
+
+.thamnien label{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.plus-btn,
+.minus-btn {
+width: 40px;
+height: 40px;
+margin-bottom: 10px;
+}
+
+.btnTimKiem{
+  display: flex;
+  justify-content: center;
+}
+
+.btnTimKiem button{
+  height: 35px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #FF621F;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* content */
+.content  *{
+  box-sizing: border-box;
+}
+
+.content .content-wrapper {
+max-width: 1330px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.content .col-xs-1,.content .col-sm-1,.content .col-md-1,.content .col-lg-1,.content .col-xs-2,.content .col-sm-2,.content .col-md-2,.content .col-lg-2,.content .col-xs-3,.content .col-sm-3,.content .col-md-3,.content .col-lg-3,.content .col-xs-4,.content .col-sm-4,.content .col-md-4,.content .col-lg-4,.content .col-xs-5,.content .col-sm-5,.content .col-md-5,.content .col-lg-5,.content .col-xs-6,.content .col-sm-6,.content .col-md-6,.content .col-lg-6,.content .col-xs-7,.content .col-sm-7,.content .col-md-7,.content .col-lg-7,.content .col-xs-8,.content .col-sm-8,.content .col-md-8,.content .col-lg-8,.content .col-xs-9,.content .col-sm-9,.content .col-md-9,.content .col-lg-9,.content .col-xs-10,.content .col-sm-10,.content .col-md-10,.content .col-lg-10,.content .col-xs-11,.content .col-sm-11,.content .col-md-11,.content .col-lg-11,.content .col-xs-12,.content .col-sm-12,.content .col-md-12,.content .col-lg-12 {
+position: relative;
+min-height: 1px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.content .col-md-1,.content .col-md-2,.content .col-md-3,.content .col-md-4,.content .col-md-5,.content .col-md-6,.content .col-md-7,.content .col-md-8,.content .col-md-9,.content .col-md-10,.content .col-md-11,.content .col-md-12 {
+float: left;
+}
+.content .col-md-9 {
+width: 100%;
+}
+
+.content .box {
+margin-left: -15px;
+margin-right: -15px;
+}
+
+.content .page-find-a-doctor .find-a-doctoc__doctor-list-wrapper .find-a-doctoc__doctor-list .doctor-list__doctor-item,.content .find-a-doctoc__doctor-list .doctor-list__doctor-item,.content .medical-services__doctor-list .doctor-list__doctor-item,.content .page--doctor .doctor-list__doctor-item {
+border-bottom: 1px solid #f5f5f5;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left: 0px !important;
+margin-right: 0px !important;
+}
+/* @media all and (min-width:992px) */
+.content .col-md-4 {
+width: 31%;
+padding-right: 10px;
+}
+.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__image,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__image,.content .page--doctor .doctor-list__doctor-item .doctor-item__image {
+padding-left: 0px;
+margin-bottom: 20px;
+}
+/* @media all and (min-width:992px) */
+.content .col-md-8 {
+width: 100%;
+}
+.content .collapse {
+display: none;
+}
+/* @media all and (min-width:1360px) */
+.content .hidden-lg {
+display: none !important;
+}
+.content label {
+display: inline-block;
+max-width: 100%;
+margin-bottom: 5px;
+font-weight: bold;
+}
+.content #page--covid-19 h3,.content #page--covid-19 h4,.content #page--covid-19-screening h3,.content #page--covid-19-screening h4,.content .page-listing .page-listing__listing__content > h3,.content .page-listing .page-listing__listing__content > h3 a,.content .page--media #tab-stories h3,.content .page--media #tab-stories h3 a,.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info,.content .page--doctor .doctor-list__doctor-item .doctor-item__info,.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info label,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info label,.content .page--doctor .doctor-list__doctor-item .doctor-item__info label {
+color: #2698d6;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+text-transform: none;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.content .col-md-12 {
+  width: 97.9%;
+  margin-left: 10px;
+}
+
+/* họ tên */
+.content a {
+color: #337ab7;
+text-decoration: none;
+}
+
+.content .page--health-checkup--inner p,.content .page--health-checkup--inner span.choose-checkup-programmes-title,.content #tinymce li,.content .standard-page li,.content #tinymce p,.content .standard-page p,.content #tinymce span,.content .standard-page span,.content #tinymce tr,.content .standard-page tr,.content #page--make-an-appointment .doctor-item__work-timetable,.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__work-timetable,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__work-timetable,.content .page--doctor .doctor-list__doctor-item .doctor-item__work-timetable,.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 p,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 p,.content .page--doctor .doctor-list__doctor-item .doctor-item__info .col-md-8 p,.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 ul li,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 ul li,.content .page--doctor .doctor-list__doctor-item .doctor-item__info .col-md-8 ul li {
+color: #666;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+text-transform: none;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-4,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-4,.content .page--doctor .doctor-list__doctor-item .doctor-item__info .col-md-4 {
+text-align: right;
+}
+
+.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 ul,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 ul,.content .page--doctor .doctor-list__doctor-item .doctor-item__info .col-md-8 ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 ul li,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 ul li,.content .page--doctor .doctor-list__doctor-item .doctor-item__info .col-md-8 ul li {
+padding-left: 5px;
+}
+
+.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 strong,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 strong,.content .page--doctor .doctor-list__doctor-item .doctor-item__info .col-md-8 strong {
+display: block;
+color: #45b07b;
+font-weight: 400;
+margin: 0 0 5px;
+}
+
+.content .find-a-doctoc__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 h4,.content .medical-services__doctor-list .doctor-list__doctor-item .doctor-item__info .col-md-8 h4,.content .page--doctor .doctor-list__doctor-item .doctor-item__info .col-md-8 h4 {
+color: #2698d6;
+font-size: 18px;
+font-weight: 400;
+line-height: normal;
+text-transform: none;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.content .title--blue-banner,.content .page-find-a-doctor .find-a-doctor__result .col-md-12 > h3,.content .home__promotions > h3,.content .widget__highlight-doctor h3,.content .widget__media > h3 {
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+line-height: normal;
+text-transform: none;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.content .title--blue-banner,.content .page-find-a-doctor .find-a-doctor__result .col-md-12 > h3,.content .home__promotions > h3,.content .widget__highlight-doctor h3,.content .widget__media > h3 {
+background-color: #2698d6;
+border-radius: 5px 5px 0 0;
+margin: 0;
+padding: 8px 20px;
+text-transform: uppercase;
+}
+
+.find-a-doctor__result .col-md-12 > h3{
+  width: 980px;
+}
