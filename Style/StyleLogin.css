@@ -127,12 +127,64 @@ body{
     background: #0FA958;
     border-radius: 199px;
 }
+.formregister{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 459px;
+    height: 427px;
+    border-radius: 20px;
+    background-color: white;
+}
+.formregister h4{
+    margin: 10px  auto;
+    width: 137px;
+    height: 28px;
+    left: 650px;
+    top: 410px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+}
+.formregister input{
+    margin: 10px  auto;
+    display: block;
+    box-sizing: border-box;
+    width: 444px;
+    height: 44px;
+    left: 499px;
+    top: 450px;
+
+    background: #F4F4F4;
+    border: 1px solid #EAEAEA;
+    border-radius: 199px;
+}
+.formregister button{
+    display: block;
+    margin: 30px auto;
+    width: 444px;
+    height: 44px;
+    background: #0FA958;
+    border-radius: 199px;
+}
 .footer{
+    margin: 0 auto;
     background-color: #0FA958;
     width: 100%;
     position: absolute;
     height: 110px;
     left: 1px;
+    display: flex;
+    justify-content: space-between;
    
 }
 .footer .logo{
@@ -144,4 +196,8 @@ body{
 .footer .logo p{
     color: white;
     padding-top: 15px;
+}
+.contact1 img{
+    display: block;
+    margin: 10px auto;
 }
