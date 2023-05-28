@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "users";
+$database = "user";
 $conn = new mysqli($servername, $username, $password, $database);
 
 // Kiểm tra kết nối
@@ -22,7 +22,7 @@ if(isset($_POST['register1'])) {
     $sql = "INSERT INTO users (fullname, email, phone, password) VALUES ('$fullname', '$email', '$phone', '$password')";
     
     if ($conn->query($sql) === TRUE) {
-        header("Location: Login1.html");
+        header("Location: Login.php");
         exit();
     } else {
         echo "Đăng ký thất bại: " . $conn->error;

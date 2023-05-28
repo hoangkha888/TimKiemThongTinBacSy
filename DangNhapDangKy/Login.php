@@ -25,10 +25,11 @@
             <h4>Đăng nhập</h4>
             <form method="post" action="login1.php">
             <input type="email" name="email" required placeholder="Email">
-            <input type="password" name="password" placeholder="Mật khẩu">
-            </form>
+            <input type="password" name="password" required placeholder="Mật khẩu">
+            
             <a>Quên mật khẩu</a>
             <button type="submit" name="login1">Đăng nhập</button>
+            </form>
         </div>
     </div>
     <div class="footer">

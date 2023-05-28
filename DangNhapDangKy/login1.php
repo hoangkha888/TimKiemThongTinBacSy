@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "users";
+$database = "user";
 $conn = new mysqli($servername, $username, $password, $database);
 
 // Kiểm tra kết nối
@@ -21,9 +21,10 @@ if(isset($_POST['login1'])) {
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
-        echo "Đăng nhập thành công!";
+        header("Location: register.php");
+        exit();
     } else {
-        echo "Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin đăng nhập.";
+        echo ("Sai tài khoản hoặc mật khẩu");
     }
 }
 
