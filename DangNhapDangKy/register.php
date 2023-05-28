@@ -23,7 +23,7 @@
     <div class="Content">
         <div class="formregister">
             <h4>Đăng ký</h4>
-            <form method="post" action="register1.php"></form>
+            <form method="post" action="register1.php">
             <input type="text" name="fullname" required placeholder="Nhập hộ tên">
             <input type="email" name="email" required placeholder="Nhập emai">
             <input type="tel" name="phone" required placeholder="Nhập số điện thoại">
