@@ -1,0 +1,205 @@
+body{
+    overflow: auto;
+    z-index: 1;
+}
+.header{
+    position: absolute;
+    width: 100vw;
+    height: 64px;
+    left: 1px;
+    top: 1px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 49px;
+    height: 56px;
+    float:left;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+.logo p{
+    position: absolute;
+    left: 5.63%;
+    right: 81.73%;
+    top: 18.75%;
+    bottom: 6.25%;
+    
+
+    font-family: 'Shojumaru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height */
+    padding-top:0px ;
+    margin-top: 0px;
+    
+
+    color: #0FA958;
+}
+.logo img:last-child{
+    width: 30px;
+    height: 30px;
+    margin-left: 140px;
+    padding-top: 15px;
+}
+
+.login{
+    float:left;
+    padding-top: 25px;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.Content{
+    width: 100%;
+    height: 800px;
+    background-image: url(../Image/body.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+.formlogin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 613px;
+    height: 335px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.formlogin h4{
+    margin: 10px  auto;
+    width: 137px;
+    height: 28px;
+    left: 650px;
+    top: 410px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+}
+.formlogin input{
+    padding-left: 20px;
+    margin: 10px  auto;
+    display: block;
+    box-sizing: border-box;
+    width: 444px;
+    height: 44px;
+    left: 499px;
+    top: 450px;
+
+    background: #F4F4F4;
+    border: 1px solid #EAEAEA;
+    border-radius: 199px;
+}
+.formlogin a{
+    margin-left: 400px;
+    text-align: right;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+   
+
+    color: #000000;
+}
+.formlogin button{
+    display: block;
+    margin: 20px auto;
+    width: 444px;
+    height: 44px;
+    background: #0FA958;
+    border-radius: 199px;
+}
+.formregister{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 459px;
+    height: 427px;
+    border-radius: 20px;
+    background-color: white;
+}
+.formregister h4{
+    margin: 10px  auto;
+    width: 137px;
+    height: 28px;
+    left: 650px;
+    top: 410px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+}
+.formregister input{
+    padding-left: 20px;
+    margin: 10px  auto;
+    display: block;
+    box-sizing: border-box;
+    width: 444px;
+    height: 44px;
+    left: 499px;
+    top: 450px;
+
+    background: #F4F4F4;
+    border: 1px solid #EAEAEA;
+    border-radius: 199px;
+}
+.formregister button{
+    display: block;
+    margin: 30px auto;
+    width: 444px;
+    height: 44px;
+    background: #0FA958;
+    border-radius: 199px;
+}
+.footer{
+    margin: 0 auto;
+    background-color: #0FA958;
+    width: 100%;
+    position: absolute;
+    height: 110px;
+    left: 1px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footer .logo{
+    margin-top: 30px;
+}
+.footer .logo img{
+    color: white;
+}
+.footer .logo p{
+    color: white;
+    padding-top: 15px;
+}
+.contact1 img{
+    display: block;
+    margin: 10px auto;
+}
