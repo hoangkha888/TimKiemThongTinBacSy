@@ -186,6 +186,41 @@
         }    
     }
 
+    //insert bác sĩ
+    if(isset($_POST['adddoctorbtn']))
+    {
+        $id = $_POST['add_id'];
+        $hoten = $_POST['add_hoten'];
+        $ngaysinh = $_POST['add_ngaysinh'];
+        $gioitinh = $_POST['add_gioitinh'];
+        $cccd = $_POST['add_cccd'];
+        $diachi = $_POST['add_diachi'];
+        $sdt = $_POST['add_sdt'];
+        $email = $_POST['add_email'];
+        $noilamviec = $_POST['add_noilamviec'];
+        $thamnien = $_POST['add_thamnien'];
+        $quatrinhcongtac = $_POST['add_quatrinhcongtac'];
+        $thanhtich = $_POST['add_thanhtich'];
+    
+        if(isset($hoten))
+        {
+            $query = "INSERT INTO doctor (hoten, ngaysinh, gioitinh, cccd, diachi, sdt, email, noilamviec, thamnien, quatrinhcongtac, thanhtich)
+            VALUES ('$hoten','$ngaysinh', '$gioitinh', '$cccd', '$diachi', '$sdt', '$email', '$noilamviec', '$thamnien', '$quatrinhcongtac', '$thanhtich')";
+            $query_run = mysqli_query($connection, $query);
+
+
+            $_SESSION['success'] =  "Added Successfully";
+            header('Location: qlbacsi.php');
+        }
+        else 
+        {
+            echo "pass no match";
+            $_SESSION['status'] =  "Erorr !";
+            header('Location: qlbacsi.php');
+        }
+    
+    }
+
     // update bac si
     if(isset($_POST['bacsiupdatebtn']))
     {
@@ -262,20 +297,25 @@
         $quatrinhcongtac = $_POST['quatrinhcongtac'];
         $thanhtich = $_POST['thanhtich'];
 
-        $query = "INSERT INTO doctor (hoten, ngaysinh, gioitinh, cccd, diachi, sdt, email, noilamviec, thamnien, quatrinhcongtac, thanhtich)
-         VALUES ('$hoten','$ngaysinh', '$gioitinh', '$cccd', '$diachi', '$sdt', '$email', '$noilamviec', '$thamnien', '$quatrinhcongtac', '$thanhtich')";
-        $query_run = mysqli_query($connection, $query);
+        if(!empty($id)){
+            $query = "INSERT INTO doctor (hoten, ngaysinh, gioitinh, cccd, diachi, sdt, email, noilamviec, thamnien, quatrinhcongtac, thanhtich)
+            VALUES ('$hoten','$ngaysinh', '$gioitinh', '$cccd', '$diachi', '$sdt', '$email', '$noilamviec', '$thamnien', '$quatrinhcongtac', '$thanhtich')";
+            $query_run = mysqli_query($connection, $query);
+        }else{
+            echo "<h2>du lieu rong</h2>";
+        }
+
         if($query_run)
-            {
-                    $query1 = "DELETE FROM xetduyet
-                                 WHERE id='$id' ";
-                    $run = mysqli_query($connection, $query1);
-                    header('Location: xetduyet.php');
-            }
-            else 
-            {
-                echo "not done";
-            }
+        {
+                $query1 = "DELETE FROM xetduyet
+                                WHERE id='$id' ";
+                $run = mysqli_query($connection, $query1);
+                header('Location: xetduyet.php');
+        }
+        else 
+        {
+            echo "not done";
+        }
     }
 
 

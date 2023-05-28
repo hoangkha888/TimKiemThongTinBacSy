@@ -22,7 +22,7 @@
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Registered Admin</div>
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tài khoản Admin</div>
               <div class="h5 mb-0 font-weight-bold text-gray-800">
                 <?php
                   require 'dbconnect.php';
@@ -47,7 +47,7 @@
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Registered User</div>
+              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Tài khoản User</div>
               <div class="h5 mb-0 font-weight-bold text-gray-800">
               <?php
                   require 'dbconnect.php';
@@ -72,7 +72,7 @@
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Registered Doctor</div>
+              <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tài khoản Bác sĩ</div>
               <div class="row no-gutters align-items-center">
                 <div class="col-auto">
                   <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
@@ -83,12 +83,6 @@
                     $row = mysqli_num_rows($query_run);
                     echo '<h4>'.$row.'</h4>';
                   ?>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="progress progress-sm mr-2">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                      aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </div>
@@ -107,7 +101,7 @@
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Acount</div>
+              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Tổng số tài khoản</div>
               <div class="h5 mb-0 font-weight-bold text-gray-800">
               <?php
                   require 'dbconnect.php';

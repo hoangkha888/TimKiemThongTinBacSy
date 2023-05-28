@@ -9,7 +9,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Admin Data</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Acount</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -37,8 +37,8 @@
         
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" name="registerbtn" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+            <button type="submit" name="registerbtn" class="btn btn-primary">Thêm</button>
         </div>
 
         <input type="hidden" name="usertype" value="admin">
@@ -57,7 +57,7 @@
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Admin Profile 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">
-              Add Admin Profile 
+              Thêm tài khoản 
             </button>
     </h6>
   </div>

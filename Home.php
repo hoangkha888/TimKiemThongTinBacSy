@@ -186,28 +186,77 @@
     </div>
     </div>
     <div class="rightcolumn">
-      <div class="card">
-        <h2>About Me</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      </div>
-      <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg"><p>Image</p></div>
-        <div class="fakeimg"><p>Image</p></div>
-        <div class="fakeimg"><p>Image</p></div>
-      </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
+      
+        <div style="margin-top: 20px;" class="col-md-9 col-lg-11" id="sidebar" data-module-init="sidebar" >
+            <div class="row">
+                <div class="col-md-12 sidebar-col-1"> 
+                    <div class="sidebar__widget"> 
+                        <div class="widget__news"> 
+                            <h3 class="title--blue-banner"> TIN TỨC </h3>  
+                            <ul class="widget__news__listing"> 
+                                <li> 
+                                    <a href="https://www.fvhospital.com/tin-tuc/bac-si-tran-anh-tan-danh-tam-huyet-dieu-tri-bong-va-lam-dep-cho-doi/"> Bác sĩ Trần Anh Tân dành tâm huyết điều trị bỏng và làm đẹp cho đời </a> 
+                                </li> 
+                                <li> 
+                                    <a href="https://www.fvhospital.com/tin-tuc/trong-luong-thuc-khong-trong-thuoc-la-benh-vien-fv-huong-ung-thong-diep-cua-ngay-the-gioi-khong-thuoc-la-2023/"> 'TRỒNG LƯƠNG THỰC, KHÔNG TRỒNG THUỐC LÁ' - BỆNH VIỆN FV HƯỞNG ỨNG THÔNG ĐIỆP CỦA NGÀY THẾ GIỚI KHÔNG THUỐC LÁ 2023 </a> 
+                                </li> 
+                                <li> 
+                                    <a href="https://www.fvhospital.com/tin-tuc/trung-tam-dieu-tri-dau-benh-vien-fv-no-luc-cung-nhieu-benh-vien-phat-trien-linh-vuc-kiem-soat-dau-tai-viet-nam/"> TRUNG TÂM ĐIỀU TRỊ ĐAU - BỆNH VIỆN FV, NỖ LỰC CÙNG NHIỀU BỆNH VIỆN PHÁT TRIỂN LĨNH VỰC KIỂM SOÁT ĐAU TẠI VIỆT NAM </a> 
+                                </li> 
+                                <li> 
+                                    <a href="https://www.fvhospital.com/tin-tuc/thuong-xuyen-tiep-xuc-truc-tiep-voi-nang-coi-chung-ung-thu-da/"> Thường xuyên tiếp xúc trực tiếp với nắng, coi chừng ung thư da </a> 
+                                </li> 
+                                <li> 
+                                    <a href="https://www.fvhospital.com/tin-tuc/benh-vien-fv-chuc-mung-ngay-dieu-duong-the-gioi-2023-voi-nhieu-ky-vong-trong-tuong-lai/"> BỆNH VIỆN FV CHÚC MỪNG NGÀY ĐIỀU DƯỠNG THẾ GIỚI 2023 VỚI NHIỀU KỲ VỌNG TRONG TƯƠNG LAI </a> 
+                                </li> 
+                            </ul>  
+                        </div>
+                    </div>
+                    <div class="sidebar__widget"> 
+                        <a href="https://www.fvhospital.com/vi/ban-can-biet/"> 
+                            <img class="img-responsive img-thumbnail" alt="Conditions &amp; Treatments" src="https://www.fvhospital.com/wp-content/themes/fvhospital.com/assets/images/default//home-new/conditions-treatments-vi.jpg"> 
+                        </a>
+                    </div> 
+                        <div class="sidebar__widget"> 
+                            <a href="https://www.fvhospital.com/vi/gioi-thieu-chung/truyen-thong/"> 
+                                <img class="img-responsive img-thumbnail" alt="Media" src="https://www.fvhospital.com/wp-content/themes/fvhospital.com/assets/images/default//home-new/media-vi.jpg"> 
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
   
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
+  <div class="footer" style="display: flex; justify-content: space-around; background-color: #428B64;">
+        <div class="logo_footer">
+            <img style="height: 75px;" src="./Image/logo-removebg-preview.png" alt="logo">
+        </div>
+        <div class="ic_footer" style="margin-top: 20px;">
+            <div class="ic_lienhe">
+                <i style="color:aliceblue;" class="fa-brands fa-square-facebook fa-2xl"></i>
+                <i style="color:aliceblue;" class="fa-brands fa-twitter fa-2xl"></i>
+                <i style="color:aliceblue;" class="fa-brands fa-instagram fa-2xl" ></i>
+                <i style="color:aliceblue;" class="fa-regular fa-envelope fa-2xl"></i>
+            </div>
+            <div class="coppyright">
+                <i style="color:aliceblue;" class="fa-solid fa-copyright"></i>
+                <label style="color:aliceblue;"> 2021 Doctor. All rights reserved.</label>
+            </div>
+        </div>
+        <div class="lienhe">
+                <h6 style="color:aliceblue;">constact us</h6>
+                <div class="sdt">
+                    <i style="color:aliceblue;" class="fa-solid fa-phone"></i>
+                    <label style="color:aliceblue;">0123456789</label>
+                </div>
+                <div class="mail">
+                    <i style="color:aliceblue;" class="fa-regular fa-envelope"></i>
+                    <label style="color:aliceblue;">doctor@gmail.com</label>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 <script src="./js/main.js"></script>
 </html>
